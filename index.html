@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pravin's corporation .ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="mode-toggle">
+    <button onclick="toggleMode()">🌓</button>
+  </div>
+
+  <div class="container">
+    <div class="image-box">
+      <img src="https://media.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif" alt="Login GIF">
+    </div>
+
+    <div class="form-box" id="loginBox">
+      <h2>Welcome to the pravin's website login here</h2>
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button onclick="loginUser()">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+    </div>
+
+    <div class="form-box hidden" id="signupBox">
+      <h2>Sign Up</h2>
+      <input type="email" id="signupEmail" placeholder="Email" required>
+      <input type="password" id="signupPassword" placeholder="Password" required>
+      <button onclick="registerUser()">Register</button>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
